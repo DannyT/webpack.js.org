@@ -34,7 +34,7 @@ By default the current directory is used, but it's recommended to pass a value i
 
 `string | [string] | object { <key>: string | [string] } | (function: () => string | [string] | object { <key>: string | [string] })`
 
-The point or points to enter the application. At this point the application starts executing. If an array is passed all items will be executed.
+The point or points to enter the application. At this point the application starts executing. If an array is passed all items will be executed. Since webpack v4, it is not necessary to specify an entry point, a default of `./src/index.js` will be used if not specified.
 
 A dynamically loaded module is **not** an entry point.
 
